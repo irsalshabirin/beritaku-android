@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardViewArticle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/common10"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imgViewItem"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+        <!--android:foregroundGravity="center_vertical|center_horizontal"-->
+
+        <RelativeLayout
+            android:id="@+id/relativeLayoutText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgViewItem"
+            android:layout_alignTop="@+id/imgViewItem"
+            android:layout_toLeftOf="@+id/imgViewItem"
+            android:layout_toStartOf="@+id/imgViewItem"
+            android:gravity="top|start|left"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_layout">
+
+            <TextView
+                android:id="@+id/txtTitleItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:maxLines="2"
+                android:paddingBottom="@dimen/padding_layout"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:text="fdsafdsafds fdsajfdsoahfdkjshakjhf  afdsafdsafdsaf"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="@android:color/black" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/relativeLayoutFeed"
+                android:layout_marginLeft="@dimen/margin_layout"
+                android:layout_marginStart="@dimen/margin_layout"
+                android:layout_marginTop="@dimen/margin_layout"
+                android:gravity="start|bottom"
+                android:paddingTop="@dimen/padding_layout"
+                android:text="21 September 2016, 21:00 WIB" />
+
+            <RelativeLayout
+                android:id="@+id/relativeLayoutFeed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:gravity="start|bottom">
+
+                <ImageView
+                    android:id="@+id/imgViewFeedIcon"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitCenter"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/txtFeedTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imgViewFeedIcon"
+                    android:layout_alignTop="@+id/imgViewFeedIcon"
+                    android:layout_marginLeft="@dimen/margin_layout"
+                    android:layout_marginStart="@dimen/margin_layout"
+                    android:layout_marginTop="3dp"
+                    android:layout_toRightOf="@+id/imgViewFeedIcon"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="New York Times"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

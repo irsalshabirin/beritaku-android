@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "778236371970",
+    "project_id": "firebase-beritaku"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:778236371970:android:33859b1388392a4f",
+        "android_client_info": {
+          "package_name": "co.dust.beritaku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "778236371970-7lv9beldg2q2qpidips55j1mo55ooid6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.dust.beritaku",
+            "certificate_hash": "70E743B8A29092BA9392EAB120DEBF1C97C208C2"
+          }
+        },
+        {
+          "client_id": "778236371970-gpj3b69ngklodt1qrjfafdcqvv6ekacl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyASw12rL33rMxtvlAohRctKj1LPogoa850"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

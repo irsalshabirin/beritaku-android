@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageViewItem"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txtTitleItem"
+            fontPath="font/roboto-regular.ttf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/padding_layout"
+            android:paddingLeft="@dimen/padding_layout"
+            android:paddingRight="@dimen/padding_layout"
+            android:paddingTop="@dimen/padding_layout"
+            android:text="Title Berita"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25dp"
+            tools:ignore="MissingPrefix" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgViewFeedIcon"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                android:src="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txtFeedTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgViewFeedIcon"
+                android:layout_alignTop="@+id/imgViewFeedIcon"
+                android:layout_marginLeft="@dimen/margin_layout"
+                android:layout_marginStart="@dimen/margin_layout"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/imgViewFeedIcon"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="New York Times"
+                android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            <TextView
+                android:id="@+id/txtDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imgViewFeedIcon"
+                android:layout_alignTop="@+id/imgViewFeedIcon"
+                android:layout_marginLeft="@dimen/margin_layout"
+                android:layout_marginStart="@dimen/margin_layout"
+                android:layout_toEndOf="@+id/txtFeedTitle"
+                android:layout_toRightOf="@+id/txtFeedTitle"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="21 September 2016, 21:00 WIB" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtSubTitleItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_layout"
+            android:paddingLeft="@dimen/padding_layout"
+            android:paddingRight="@dimen/padding_layout"
+            android:text="Deskripsi Berita"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
